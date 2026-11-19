@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795104085760,
+  "lastUpdate": 1795104096013,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -730711,54 +730711,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "6d99b84b0f651ede00992e6c8de1e3cb55ad5547",
-          "message": "Checkpoint sector alignment and misc fixes (#2303)",
-          "timestamp": "2026-10-31T14:47:29-07:00",
-          "tree_id": "fed0ffecca2f7087221b9a3c26e511bd5eaea011",
-          "url": "https://github.com/microsoft/garnet/commit/6d99b84b0f651ede00992e6c8de1e3cb55ad5547"
-        },
-        "date": 1793483473617,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AAD)",
-            "value": 13461.740987337553,
-            "unit": "ns",
-            "range": "± 30.637302838907264"
-          },
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: ACL)",
-            "value": 15073.926367623466,
-            "unit": "ns",
-            "range": "± 8.950910314729809"
-          },
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AOF)",
-            "value": 13664.140385219029,
-            "unit": "ns",
-            "range": "± 24.391162739441857"
-          },
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: None)",
-            "value": 13690.717874145508,
-            "unit": "ns",
-            "range": "± 12.131574893954413"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "15467143+TedHartMS@users.noreply.github.com",
-            "name": "Ted Hart",
-            "username": "TedHartMS"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "a5386cf79a303ad67c3c59260c8d779885d7a0a4",
           "message": "[Tsavorite] Observe internal commit-task exceptions (#2333)\n\nObserve shared commit-task faults on disposal and commit failure to prevent\nUnobservedTaskException when no caller awaits them. Awaiters still receive\nthe original exceptions.",
           "timestamp": "2026-10-31T23:25:08-07:00",
@@ -733095,6 +733047,54 @@ window.BENCHMARK_DATA = {
             "value": 11160.025213623047,
             "unit": "ns",
             "range": "± 111.66350354110874"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jack@metajack.im",
+            "name": "Jack Moffitt",
+            "username": "metajack"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a3f5f0cc594dfccc0c4edb3774fdba0e4f56f09",
+          "message": "Add 2-bit and 4-bit spherical quantization to vector sets (#2392)\n\n* Add 2-bit and 4-bit spherical quantization to vector sets\n\n* address feedback\n\n---------\n\nCo-authored-by: Jack Moffitt <jackmoffitt@microsoft.com>\nCo-authored-by: kevin-montrose <kmontrose@microsoft.com>",
+          "timestamp": "2026-11-19T10:57:13-05:00",
+          "tree_id": "c88d38b5759295860cba4fd90659f192ea6d256f",
+          "url": "https://github.com/microsoft/garnet/commit/7a3f5f0cc594dfccc0c4edb3774fdba0e4f56f09"
+        },
+        "date": 1795104076353,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AAD)",
+            "value": 15374.307826450893,
+            "unit": "ns",
+            "range": "± 76.4819291204137"
+          },
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: ACL)",
+            "value": 15098.285568237305,
+            "unit": "ns",
+            "range": "± 59.55811200299281"
+          },
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AOF)",
+            "value": 15281.723030598958,
+            "unit": "ns",
+            "range": "± 85.45357754860422"
+          },
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: None)",
+            "value": 15204.235274178642,
+            "unit": "ns",
+            "range": "± 87.60069693779381"
           }
         ]
       }
