@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795122490931,
+  "lastUpdate": 1795122501503,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -735505,54 +735505,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "49699333+dependabot[bot]@users.noreply.github.com",
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e42eaee558bae245aac50e7fab7c32bdc6802657",
-          "message": "Build(deps): Bump dotnet-sdk (#2338)\n\nBumps the dotnet-deps group with 1 update: [dotnet-sdk](https://github.com/dotnet/sdk).\n\n\nUpdates `dotnet-sdk` from 10.0.400 to 10.0.403\n- [Release notes](https://github.com/dotnet/sdk/releases)\n- [Commits](https://github.com/dotnet/sdk/compare/v10.0.400...v10.0.403)\n\n---\nupdated-dependencies:\n- dependency-name: dotnet-sdk\n  dependency-version: 10.0.403\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: dotnet-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "timestamp": "2026-11-01T12:30:51-08:00",
-          "tree_id": "0a37579748de51fa9be1952deb519a66a4486e59",
-          "url": "https://github.com/microsoft/garnet/commit/e42eaee558bae245aac50e7fab7c32bdc6802657"
-        },
-        "date": 1793565414503,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AAD)",
-            "value": 86234.43563406808,
-            "unit": "ns",
-            "range": "± 141.6084323028966"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: ACL)",
-            "value": 42179.0857027494,
-            "unit": "ns",
-            "range": "± 18.19427923875542"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AOF)",
-            "value": 117629.44144112723,
-            "unit": "ns",
-            "range": "± 296.042988413531"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: None)",
-            "value": 89286.0087977818,
-            "unit": "ns",
-            "range": "± 62.03250937872304"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "kmontrose@microsoft.com",
             "name": "kevin-montrose",
             "username": "kevin-montrose"
@@ -737899,6 +737851,54 @@ window.BENCHMARK_DATA = {
             "value": 91203.75703938802,
             "unit": "ns",
             "range": "± 550.3043532453986"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "193022578+jayhemnani9910@users.noreply.github.com",
+            "name": "Jay Hemnani",
+            "username": "jayhemnani9910"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d19ae24ba61d2e90ed79fa310f7b6b4d247a93c0",
+          "message": "Write a RESP3 null for missing keys in MGET (#2410)\n\nMGetReadArgBatch wrote every missing key with TryWriteNull, the RESP2 $-1, also\non RESP3 connections. redis-py 8 uses RESP3 by default and blocks reading $-1 as\na bulk string, so mget() with any missing key hangs. Use the session's\nprotocol-aware WriteNull.\n\nCo-authored-by: kevin-montrose <kmontrose@microsoft.com>",
+          "timestamp": "2026-11-19T16:03:49-05:00",
+          "tree_id": "1460bd8a3044a4533db24582d55a06e8105e16e0",
+          "url": "https://github.com/microsoft/garnet/commit/d19ae24ba61d2e90ed79fa310f7b6b4d247a93c0"
+        },
+        "date": 1795122469117,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AAD)",
+            "value": 121864.47424316406,
+            "unit": "ns",
+            "range": "± 998.1107814896912"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: ACL)",
+            "value": 63835.65994466146,
+            "unit": "ns",
+            "range": "± 437.93570449150104"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AOF)",
+            "value": 167098.27322591146,
+            "unit": "ns",
+            "range": "± 1148.9411982609347"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: None)",
+            "value": 121319.29182316706,
+            "unit": "ns",
+            "range": "± 227.94175426251348"
           }
         ]
       }
