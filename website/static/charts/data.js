@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795122661528,
+  "lastUpdate": 1795122672594,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -779621,120 +779621,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "49699333+dependabot[bot]@users.noreply.github.com",
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e42eaee558bae245aac50e7fab7c32bdc6802657",
-          "message": "Build(deps): Bump dotnet-sdk (#2338)\n\nBumps the dotnet-deps group with 1 update: [dotnet-sdk](https://github.com/dotnet/sdk).\n\n\nUpdates `dotnet-sdk` from 10.0.400 to 10.0.403\n- [Release notes](https://github.com/dotnet/sdk/releases)\n- [Commits](https://github.com/dotnet/sdk/compare/v10.0.400...v10.0.403)\n\n---\nupdated-dependencies:\n- dependency-name: dotnet-sdk\n  dependency-version: 10.0.403\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: dotnet-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "timestamp": "2026-11-01T12:30:51-08:00",
-          "tree_id": "0a37579748de51fa9be1952deb519a66a4486e59",
-          "url": "https://github.com/microsoft/garnet/commit/e42eaee558bae245aac50e7fab7c32bdc6802657"
-        },
-        "date": 1793565894989,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: AOF)",
-            "value": 12644.535256522042,
-            "unit": "ns",
-            "range": "± 10.766565484641509"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: AOF)",
-            "value": 22069.050578526087,
-            "unit": "ns",
-            "range": "± 39.595842443498235"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: AOF)",
-            "value": 10471.285650400016,
-            "unit": "ns",
-            "range": "± 5.049156127289144"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: AOF)",
-            "value": 17443.343593052454,
-            "unit": "ns",
-            "range": "± 33.922828619475574"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: AOF)",
-            "value": 92716.93203500602,
-            "unit": "ns",
-            "range": "± 111.35594586341604"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
-            "value": 9285.417900594075,
-            "unit": "ns",
-            "range": "± 8.527302842240433"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
-            "value": 11142.92564086914,
-            "unit": "ns",
-            "range": "± 117.00707565149992"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
-            "value": 8251.203200022379,
-            "unit": "ns",
-            "range": "± 5.930272429172269"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
-            "value": 8574.421938969539,
-            "unit": "ns",
-            "range": "± 7.30170564548509"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
-            "value": 68192.10288783482,
-            "unit": "ns",
-            "range": "± 58.35446723413744"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
-            "value": 13086.257274627686,
-            "unit": "ns",
-            "range": "± 7.598043608759271"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
-            "value": 13794.699399312338,
-            "unit": "ns",
-            "range": "± 8.041221816274202"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
-            "value": 9096.952979454627,
-            "unit": "ns",
-            "range": "± 7.113188541524491"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
-            "value": 9828.213002131535,
-            "unit": "ns",
-            "range": "± 7.322239670722703"
-          },
-          {
-            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
-            "value": 78582.06770833333,
-            "unit": "ns",
-            "range": "± 38.78414919398687"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "kmontrose@microsoft.com",
             "name": "kevin-montrose",
             "username": "kevin-montrose"
@@ -785315,6 +785201,120 @@ window.BENCHMARK_DATA = {
             "value": 105672.34536307199,
             "unit": "ns",
             "range": "± 194.89971764042275"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "193022578+jayhemnani9910@users.noreply.github.com",
+            "name": "Jay Hemnani",
+            "username": "jayhemnani9910"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d19ae24ba61d2e90ed79fa310f7b6b4d247a93c0",
+          "message": "Write a RESP3 null for missing keys in MGET (#2410)\n\nMGetReadArgBatch wrote every missing key with TryWriteNull, the RESP2 $-1, also\non RESP3 connections. redis-py 8 uses RESP3 by default and blocks reading $-1 as\na bulk string, so mget() with any missing key hangs. Use the session's\nprotocol-aware WriteNull.\n\nCo-authored-by: kevin-montrose <kmontrose@microsoft.com>",
+          "timestamp": "2026-11-19T16:03:49-05:00",
+          "tree_id": "1460bd8a3044a4533db24582d55a06e8105e16e0",
+          "url": "https://github.com/microsoft/garnet/commit/d19ae24ba61d2e90ed79fa310f7b6b4d247a93c0"
+        },
+        "date": 1795122642190,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: AOF)",
+            "value": 12703.429774983724,
+            "unit": "ns",
+            "range": "± 85.04464563683435"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: AOF)",
+            "value": 22188.23437030499,
+            "unit": "ns",
+            "range": "± 48.641727404636995"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: AOF)",
+            "value": 8846.011641366142,
+            "unit": "ns",
+            "range": "± 49.951916586216214"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: AOF)",
+            "value": 17821.243007114954,
+            "unit": "ns",
+            "range": "± 56.000341844917706"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: AOF)",
+            "value": 94494.993359375,
+            "unit": "ns",
+            "range": "± 657.5494516578748"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 9428.392612163838,
+            "unit": "ns",
+            "range": "± 20.1191775399312"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 10380.791713169643,
+            "unit": "ns",
+            "range": "± 49.90044232474229"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 9311.545332772392,
+            "unit": "ns",
+            "range": "± 41.68893225055903"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 9848.676584097055,
+            "unit": "ns",
+            "range": "± 17.29290418906714"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 73977.44144984653,
+            "unit": "ns",
+            "range": "± 74.42644896279005"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 12280.09219796317,
+            "unit": "ns",
+            "range": "± 14.908195643385229"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 13916.98101924016,
+            "unit": "ns",
+            "range": "± 34.242063920186446"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 8779.744542803082,
+            "unit": "ns",
+            "range": "± 12.460615881096576"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 10749.716792515346,
+            "unit": "ns",
+            "range": "± 7.67820690004461"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 79886.72240741436,
+            "unit": "ns",
+            "range": "± 182.90620728614098"
           }
         ]
       }
