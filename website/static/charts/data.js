@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795116843213,
+  "lastUpdate": 1795116853033,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -733103,54 +733103,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "15467143+TedHartMS@users.noreply.github.com",
-            "name": "Ted Hart",
-            "username": "TedHartMS"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a5386cf79a303ad67c3c59260c8d779885d7a0a4",
-          "message": "[Tsavorite] Observe internal commit-task exceptions (#2333)\n\nObserve shared commit-task faults on disposal and commit failure to prevent\nUnobservedTaskException when no caller awaits them. Awaiters still receive\nthe original exceptions.",
-          "timestamp": "2026-10-31T23:25:08-07:00",
-          "tree_id": "272382301c83ebe77f79f09b084dc0b925ae6021",
-          "url": "https://github.com/microsoft/garnet/commit/a5386cf79a303ad67c3c59260c8d779885d7a0a4"
-        },
-        "date": 1793514560805,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
-            "value": 2055.2598692087026,
-            "unit": "ns",
-            "range": "± 7.644376891241413"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
-            "value": 1859.6605957576207,
-            "unit": "ns",
-            "range": "± 1.664210146771534"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
-            "value": 1826.446432522365,
-            "unit": "ns",
-            "range": "± 2.4392865550483336"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
-            "value": 1854.9550981521606,
-            "unit": "ns",
-            "range": "± 1.1990036296311553"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "49699333+dependabot[bot]@users.noreply.github.com",
             "name": "dependabot[bot]",
             "username": "dependabot[bot]"
@@ -735497,6 +735449,54 @@ window.BENCHMARK_DATA = {
             "value": 1882.9976599375407,
             "unit": "ns",
             "range": "± 12.460652686944137"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "67b50105c3565417e9c3b069d7bee856c83eaf52",
+          "message": "Consolidate NuGet dependency updates (supersedes #2339, #2377, #2391) (#2407)\n\n* Consolidate NuGet dependency updates\n\nMoves Microsoft.Extensions.*, System.Text.Json and System.Numerics.Tensors\nto 11.0.0 together. Central transitive pinning rejects a partial move:\nMicrosoft.Extensions.Logging.Console 11.0.0 needs System.Text.Json 11.0.0.\n\nAlso updates Microsoft.CodeAnalysis, Microsoft.NET.Test.Sdk,\nNUnit3TestAdapter, Microsoft.Extensions.TimeProvider.Testing,\nIdentityModel and Microsoft.VisualStudio.Threading.Analyzers, and moves\nStackExchange.Redis to 3.3.1.\n\nNUnit stays at 4.5.1 and StackExchange.Redis at 3.3.x; Dependabot now\nskips NUnit major and StackExchange.Redis minor/major versions. NUnit 5\nrequires a test migration, and StackExchange.Redis 3.4 changes cluster\nrouting in ways the cluster tests need to be migrated for.\n\nTsavorite CI jobs now also run when root build inputs change\n(Directory.Packages.props, Directory.Build.props/targets, global.json),\nwhich Tsavorite inherits.\n\nSupersedes #2339, #2377 and #2391.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 24bfd4a5-1acd-4994-9c41-70f2f406a087\n\n* Compare ParentNodeId in cluster test config matching\n\nClusterTestUtils.MatchConfig compared ClusterNode.Parent with !=, which\nis reference equality. StackExchange.Redis 3.2.1 always returned null\nfrom Parent, so the check never failed; from 3.2.15 Parent resolves to a\nnode of each configuration, so configurations with a replica never\nmatched and WaitForConfigPropagation timed out.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 24bfd4a5-1acd-4994-9c41-70f2f406a087\n\n---------\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 24bfd4a5-1acd-4994-9c41-70f2f406a087",
+          "timestamp": "2026-11-19T11:29:45-08:00",
+          "tree_id": "ebe1ac0f9acf1e41fa59e07c40faa123ea0f6414",
+          "url": "https://github.com/microsoft/garnet/commit/67b50105c3565417e9c3b069d7bee856c83eaf52"
+        },
+        "date": 1795116832749,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
+            "value": 2292.750023160662,
+            "unit": "ns",
+            "range": "± 9.076240342916861"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 2079.1929517473495,
+            "unit": "ns",
+            "range": "± 22.665500004563654"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 2291.467801314134,
+            "unit": "ns",
+            "range": "± 7.0717429199601325"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1894.3555793762207,
+            "unit": "ns",
+            "range": "± 3.369016368019317"
           }
         ]
       }
