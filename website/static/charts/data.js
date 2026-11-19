@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795104128984,
+  "lastUpdate": 1795104139454,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -765215,54 +765215,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "49699333+dependabot[bot]@users.noreply.github.com",
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cd22c52e0025d2747b2cf8f561b5ca2a291563a8",
-          "message": "Build(deps): Bump follow-redirects from 1.16.1 to 1.16.2 in /website (#2336)\n\nBumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.16.1 to 1.16.2.\n- [Release notes](https://github.com/follow-redirects/follow-redirects/releases)\n- [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.16.1...v1.16.2)\n\n---\nupdated-dependencies:\n- dependency-name: follow-redirects\n  dependency-version: 1.16.2\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "timestamp": "2026-10-31T09:57:22-07:00",
-          "tree_id": "ea29ab4c57b12d15e68272829eb4f2546e5c951a",
-          "url": "https://github.com/microsoft/garnet/commit/cd22c52e0025d2747b2cf8f561b5ca2a291563a8"
-        },
-        "date": 1793466484210,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AAD)",
-            "value": 17423.567454020184,
-            "unit": "ns",
-            "range": "± 13.928869322744212"
-          },
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: ACL)",
-            "value": 17614.800720214844,
-            "unit": "ns",
-            "range": "± 133.1020790538495"
-          },
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AOF)",
-            "value": 17347.000122070312,
-            "unit": "ns",
-            "range": "± 30.349253292371756"
-          },
-          {
-            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: None)",
-            "value": 18844.861450195312,
-            "unit": "ns",
-            "range": "± 127.09377714773224"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "15467143+TedHartMS@users.noreply.github.com",
             "name": "Ted Hart",
             "username": "TedHartMS"
@@ -767609,6 +767561,54 @@ window.BENCHMARK_DATA = {
             "value": 11290.6984601702,
             "unit": "ns",
             "range": "± 118.58072508574628"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jack@metajack.im",
+            "name": "Jack Moffitt",
+            "username": "metajack"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a3f5f0cc594dfccc0c4edb3774fdba0e4f56f09",
+          "message": "Add 2-bit and 4-bit spherical quantization to vector sets (#2392)\n\n* Add 2-bit and 4-bit spherical quantization to vector sets\n\n* address feedback\n\n---------\n\nCo-authored-by: Jack Moffitt <jackmoffitt@microsoft.com>\nCo-authored-by: kevin-montrose <kmontrose@microsoft.com>",
+          "timestamp": "2026-11-19T10:57:13-05:00",
+          "tree_id": "c88d38b5759295860cba4fd90659f192ea6d256f",
+          "url": "https://github.com/microsoft/garnet/commit/7a3f5f0cc594dfccc0c4edb3774fdba0e4f56f09"
+        },
+        "date": 1795104128100,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AAD)",
+            "value": 10747.550710042318,
+            "unit": "ns",
+            "range": "± 75.65190950211483"
+          },
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: ACL)",
+            "value": 10800.402641296387,
+            "unit": "ns",
+            "range": "± 463.4184081467332"
+          },
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: AOF)",
+            "value": 10686.43798828125,
+            "unit": "ns",
+            "range": "± 72.78398719459364"
+          },
+          {
+            "name": "BDN.benchmark.Operations.PubSubOperations.Publish(Params: None)",
+            "value": 10708.961364746094,
+            "unit": "ns",
+            "range": "± 285.3103969029364"
           }
         ]
       }
