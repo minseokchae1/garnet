@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795120529646,
+  "lastUpdate": 1795120554850,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -711503,54 +711503,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "af8814908e12592efaffdbe1604fe8507fa74c71",
-          "message": "Build(deps): Bump the website-deps group in /website with 2 updates (#2337)\n\nBumps the website-deps group in /website with 2 updates: [react](https://github.com/react/react/tree/HEAD/packages/react) and [react-dom](https://github.com/react/react/tree/HEAD/packages/react-dom).\n\n\nUpdates `react` from 19.3.0 to 19.3.1\n- [Release notes](https://github.com/react/react/releases)\n- [Changelog](https://github.com/react/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/react/react/commits/v19.3.1/packages/react)\n\nUpdates `react-dom` from 19.3.0 to 19.3.1\n- [Release notes](https://github.com/react/react/releases)\n- [Changelog](https://github.com/react/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/react/react/commits/v19.3.1/packages/react-dom)\n\n---\nupdated-dependencies:\n- dependency-name: react\n  dependency-version: 19.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: website-deps\n- dependency-name: react-dom\n  dependency-version: 19.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: website-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "timestamp": "2026-11-01T12:30:19-08:00",
-          "tree_id": "1ea8744803121362dafd04d2e37830c93c8d1739",
-          "url": "https://github.com/microsoft/garnet/commit/af8814908e12592efaffdbe1604fe8507fa74c71"
-        },
-        "date": 1793565268996,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AAD)",
-            "value": 47438.1108985314,
-            "unit": "ns",
-            "range": "± 127.13470380299606"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
-            "value": 46023.085017613004,
-            "unit": "ns",
-            "range": "± 135.1797720807395"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
-            "value": 72725.05041503906,
-            "unit": "ns",
-            "range": "± 308.52456113629967"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
-            "value": 48230.24814547025,
-            "unit": "ns",
-            "range": "± 131.85167481126058"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "49699333+dependabot[bot]@users.noreply.github.com",
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "e42eaee558bae245aac50e7fab7c32bdc6802657",
           "message": "Build(deps): Bump dotnet-sdk (#2338)\n\nBumps the dotnet-deps group with 1 update: [dotnet-sdk](https://github.com/dotnet/sdk).\n\n\nUpdates `dotnet-sdk` from 10.0.400 to 10.0.403\n- [Release notes](https://github.com/dotnet/sdk/releases)\n- [Commits](https://github.com/dotnet/sdk/compare/v10.0.400...v10.0.403)\n\n---\nupdated-dependencies:\n- dependency-name: dotnet-sdk\n  dependency-version: 10.0.403\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: dotnet-deps\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
           "timestamp": "2026-11-01T12:30:51-08:00",
@@ -713887,6 +713839,54 @@ window.BENCHMARK_DATA = {
             "value": 44979.50635579427,
             "unit": "ns",
             "range": "± 177.67121508486045"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kmontrose@microsoft.com",
+            "name": "kevin-montrose",
+            "username": "kevin-montrose"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a406cd403a3231a5ad5a4ac8763b121344c29f27",
+          "message": "Bunch of misc validation fixes (#2411)\n\n* failing test for #2393\n\n* fix for #2393\n\n* failing test for #2394\n\n* fixes #2394\n\n* failing test for #2395\n\n* fix for #2395\n\n* failing test for #2396\n\n* fix for #2396\n\n* failing tests for #2398\n\n* fix for #2398\n\n* formatting\n\n* failing test for #2399\n\n* fix #2399\n\n* failing test for #2400\n\n* fix #2400\n\n* fix #2400\n\n* failing test for #2401\n\n* fix #2401\n\n* failing test for #2402\n\n* fix #2402\n\n* failing test for the parts of #2403 we're going to fix\n\n* fix #2403\n\n* address feedback; fix hincrby validation of trailing numbers\n\n* address feedback; fix zero count handling in various commands\n\n* fix validation of values already stored in hash during hincrby",
+          "timestamp": "2026-11-19T15:32:35-05:00",
+          "tree_id": "de27c67b331048ecbb9f2279c14995910e5629b5",
+          "url": "https://github.com/microsoft/garnet/commit/a406cd403a3231a5ad5a4ac8763b121344c29f27"
+        },
+        "date": 1795120544264,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AAD)",
+            "value": 25316.18876139323,
+            "unit": "ns",
+            "range": "± 409.2129393454236"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 23376.382686360677,
+            "unit": "ns",
+            "range": "± 195.1817897033409"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 32047.743424479166,
+            "unit": "ns",
+            "range": "± 306.7590154426999"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 24173.79248700823,
+            "unit": "ns",
+            "range": "± 239.35207251680706"
           }
         ]
       }
